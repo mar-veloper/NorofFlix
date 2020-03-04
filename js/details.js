@@ -26,7 +26,7 @@ function addDetails(json) {
         newHTML += `<h6 class="mt-5">Starring: <span>${castDetails[0].person.name}, ${castDetails[1].person.name}, ${castDetails[2].person.name}</span> </h6>`;
 
         mainDetails.style.backgroundImage = `url("${elem.image.original}")`;
-        showDetailDiv.innerHTML += newHTML;
+        showDetailDiv.innerHTML = newHTML;
       };
 
       callApi(getCastDetails, `${DETAILS_API}/cast`);
