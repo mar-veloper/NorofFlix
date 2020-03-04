@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/details.css">
+
+    <!--Bootstrap Css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Details</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand text-warning" href="index.html">NorofFlix</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="jumbotron text-white">
+            <div class="bg-grad-show-detail"></div>
+            <div class="p-5 container-show-detail">
+                <h1 class="mb-2">Title of the TV-Show</h1>
+                <h5 class="mb-5">S4:E2 : "Title of Episode"</h5>
+                <p class="lead ">Something short and leading about the collection below—its contents, the
+                    creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
+                    entirely.</p>
+                <p>
+                    <a href="#" class="btn btn-warning text-uppercase my-2">Play</a>
+                    <a href="#" class="btn btn-secondary text-uppercase my-2">Share</a>
+                </p>
+                <h6 class="mt-5">Starring: Cast, Cast, Cast</h6>
+            </div>
+        </section>
+        <div class="nav-detain-page ml-5">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active " id="nav-schedule-tab" data-toggle="tab" href="#nav-schedule"
+                        role="tab" aria-controls="nav-schedule" aria-selected="true">Schedule</a>
+                    <a class="nav-item nav-link" id="nav-episodes-tab" data-toggle="tab" href="#nav-episodes" role="tab"
+                        aria-controls="nav-episodes" aria-selected="false">Profile</a>
+                </div>
+            </nav>
+            <div class="tab-content mt-5" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-schedule" role="tabpanel"
+                    aria-labelledby="nav-schedule-tab">
+                    Lorem
+                    ipsum dolor sit amet consectetur, adipisicing elit. Quam ipsa, totam dignissimos id sequi nemo
+                    debitis
+                    odit amet, praesentium sunt cupiditate quo aperiam cumque obcaecati.
+                </div>
+                <div class="tab-pane fade" id="nav-episodes" role="tabpanel" aria-labelledby="nav-episodes-tab">Lor
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Lor</div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!--Local Javascript-->
+    <script src="./js/apiCall.js"></script>
+    <script src="./js/details.js"></script>
+</body>
+
+</html>

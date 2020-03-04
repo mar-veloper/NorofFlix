@@ -1,0 +1,40 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+main {
+  background-color: black;
+}
+
+.container-card {
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.d-flex {
+  gap: 5px;
+}
+
+.card {
+  cursor: pointer;
+  position: relative;
+}
+
+.card img {
+  width: 200px;
+  transition: 0.1s;
+}
+
+.card-img-overlay {
+  display: none;
+  transition: 1s;
+}
+
+.card:hover .card-img-overlay {
+  padding: 65% 0 0 22.5%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
