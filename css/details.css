@@ -1,8 +1,8 @@
 main {
-  background-size: 50vw;
+  background-size: 53vw;
   background-position: top right;
   background-repeat: no-repeat;
-  background-image: url("http://static.tvmaze.com/uploads/images/original_untouched/189/474715.jpg");
+  background-image: url("http://static.tvmaze.com/uploads/images/original_untouched/0/15.jpg");
 }
 .jumbotron {
   margin-top: 55px;
@@ -38,7 +38,7 @@ main {
 }
 
 .nav-detain-page {
-  height: 33vh;
+  height: 60vh;
   background-image: linear-gradient(
     to right,
     black,
