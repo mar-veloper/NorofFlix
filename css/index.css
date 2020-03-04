@@ -3,6 +3,11 @@ html {
   margin: 0;
   padding: 0;
   background-color: black;
+  letter-spacing: 0.05rem;
+}
+
+.navbar-dark {
+  background-color: black;
 }
 
 main {
@@ -10,6 +15,7 @@ main {
 }
 
 .container-card {
+  width: 99.5vw;
   margin-top: 100px;
   overflow: hidden;
 }
@@ -21,6 +27,7 @@ main {
 .card {
   cursor: pointer;
   position: relative;
+  border: 1pt solid #ffc107 !important;
 }
 
 .card img {

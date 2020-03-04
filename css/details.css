@@ -11,6 +11,7 @@ main {
   background-color: rgba(0, 0, 0, 0) !important;
   overflow: hidden;
   position: relative;
+  border-radius: 0 !important;
 }
 
 .lead {
@@ -25,8 +26,10 @@ main {
   background-image: linear-gradient(
     to right,
     black,
-    rgb(0, 0, 0),
-    rgba(0, 0, 0, 0.5)
+    black,
+    black,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.3)
   );
   z-index: 1;
 }
@@ -38,12 +41,15 @@ main {
 }
 
 .nav-detain-page {
-  height: 60vh;
+  height: 38vh;
+  background-color: rgba(0, 0, 0, 0) !important;
   background-image: linear-gradient(
     to right,
     black,
-    rgb(0, 0, 0),
-    rgba(0, 0, 0, 0.5)
+    black,
+    black,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.3)
   );
 }
 

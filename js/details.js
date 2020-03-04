@@ -11,16 +11,25 @@ function addDetails(json) {
     const getSeasonDetails = json => {
       const seasonDetails = json;
 
-      newHTML += `<h5 class="mb-5">Seasons available: ${seasonDetails.length}</h5>
+      newHTML += `
+      <h5 class="mb-5">Seasons available: ${seasonDetails.length}</h5>
       <div class="lead">${elem.summary}</div>
        <p>
            <a href="#" class="btn btn-warning text-uppercase my-2">Play</a>
            <a href="#" class="btn btn-secondary text-uppercase my-2">Share</a>
        </p>
-       <h6 class="mt-4">Starring: Cast, Cast, Cast</h6>`;
-      mainDetails.style.backgroundImage = `url("${elem.image.original}")`;
+       `;
 
-      return (showDetailDiv.innerHTML += newHTML);
+      const getCastDetails = json => {
+        const castDetails = json;
+
+        newHTML += `<h6 class="mt-5">Starring: <span>${castDetails[0].person.name}, ${castDetails[1].person.name}, ${castDetails[2].person.name}</span> </h6>`;
+
+        mainDetails.style.backgroundImage = `url("${elem.image.original}")`;
+        showDetailDiv.innerHTML += newHTML;
+      };
+
+      callApi(getCastDetails, `${DETAILS_API}/cast`);
     };
 
     callApi(getSeasonDetails, `${DETAILS_API}/seasons`);
