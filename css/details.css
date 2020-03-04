@@ -2,13 +2,12 @@ main {
   background-size: 53vw;
   background-position: top right;
   background-repeat: no-repeat;
-  background-image: url("http://static.tvmaze.com/uploads/images/original_untouched/0/15.jpg");
 }
 .jumbotron {
   margin-top: 55px;
   margin-bottom: 0 !important;
   padding: 0 !important;
-  height: 60vh;
+  min-height: 60vh;
   background-color: rgba(0, 0, 0, 0) !important;
   overflow: hidden;
   position: relative;
@@ -16,11 +15,12 @@ main {
 
 .lead {
   width: 60%;
+  font-size: 1.135rem !important;
 }
 
 .bg-grad-show-detail {
   width: 100vw;
-  height: 60vh;
+  height: 100%;
   position: absolute;
   background-image: linear-gradient(
     to right,
