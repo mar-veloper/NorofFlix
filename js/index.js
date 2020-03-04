@@ -1,6 +1,31 @@
 function showMovieList(json) {
   const schedule = json;
   const cardContainer = document.querySelector("#card-container");
+  const loadingDiv = `
+    <div class="ml-3 mt-4">
+      <div class="spinner-grow text-warning" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-warning" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-warning" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-warning" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-warning" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="spinner-grow text-warning" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    `;
+
+  cardContainer.innerHTML = loadingDiv;
+
   let newHTML = "";
 
   schedule.forEach(elem => {
@@ -17,7 +42,7 @@ function showMovieList(json) {
    `;
   });
 
-  return (cardContainer.innerHTML += newHTML);
+  cardContainer.innerHTML = newHTML;
 }
 
 callApi(showMovieList, API_URL);
