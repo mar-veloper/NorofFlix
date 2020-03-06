@@ -1,5 +1,4 @@
 const API_URL = `http://api.tvmaze.com/shows`;
-let oneShowUrl = `http://api.tvmaze.com/shows/`;
 
 function callApi(func, apiUrl) {
   fetch(apiUrl)
