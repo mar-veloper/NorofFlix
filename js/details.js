@@ -23,7 +23,12 @@ function addDetails(json) {
       const getCastDetails = json => {
         const castDetails = json;
 
-        newHTML += `<h6 class="mt-5">Starring: <span>${castDetails[0].person.name}, ${castDetails[1].person.name}, ${castDetails[2].person.name}</span> </h6>`;
+        newHTML += `<h6 class="mt-5">Starring: <span>${castDetails[0].person
+          .name + ","} ${
+          castDetails.length > 1 ? castDetails[1].person.name + "," : ""
+        } ${
+          castDetails.length > 2 ? castDetails[1].person.name : ""
+        }</span> </h6>`;
 
         mainDetails.style.backgroundImage = `url("${elem.image.original}")`;
         showDetailDiv.innerHTML = newHTML;
